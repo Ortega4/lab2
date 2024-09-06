@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script>
+      //3.1
+      console.log("Practice exercise 3.1");
+      let shopArry = ["Milk", "Bread", "Apples"];
+
+      console.log(shopArry.length);
+
+      shopArry[1] = "Bananas";
+      console.log(shopArry);
+
+      //3.2
+      console.log("Practice exercise 3.2");
+      let emtyArryShopList = [];
+      emtyArryShopList.push("Milk");
+      emtyArryShopList.push("Bread");
+      emtyArryShopList.push("Apples");
+      console.log(emtyArryShopList);
+      emtyArryShopList.splice(1, 1, "Bananas", "Eggs");
+
+      console.log(emtyArryShopList);
+      emtyArryShopList.pop();
+      console.log(emtyArryShopList);
+      emtyArryShopList.sort();
+      console.log(emtyArryShopList);
+
+      console.log(emtyArryShopList.indexOf("Milk"));
+      emtyArryShopList.splice(1, 0, "Carrots", "Lettuce");
+      console.log(emtyArryShopList);
+
+      let drinkArray = ["juice", "Pop"];
+      emtyArryShopList = emtyArryShopList.concat(drinkArray.concat(drinkArray));
+      let lastindexPop = emtyArryShopList.lastIndexOf("Pop");
+      console.log(lastindexPop);
+      console.log(emtyArryShopList);
+
+      console.log("Practice exercise 3.3");
+      let arry = [1, 2, 3];
+      let newArry = [arry, arry, arry];
+      console.log(newArry[0][1]);
+
+      console.log("Practice exercise 3.4");
+    </script>
+    <h1>This is a simple HTML + CSS template!</h1>
+  </body>
+</html>
